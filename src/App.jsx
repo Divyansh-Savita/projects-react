@@ -7,6 +7,7 @@ import ImageSlider from './components/image-silder'
 import TreeView from './components/tree-view'
 import menuData from './components/tree-view/data'
 import QRCodeGenerator from './components/qr-code-generator'
+import LightDarkMode from './components/light-dark-mode'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
     <ImageSlider url={'https://picsum.photos/v2/list'} limit={"10"} page={1} />
     <TreeView menus={menuData}/>
     <QRCodeGenerator/>
+    <LightDarkMode/>
     </>
   )
 }
